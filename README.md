@@ -8,12 +8,6 @@ Final QA project
 
  Well, it wasn't
 
- This is
+ Alright let's get serious
 
-
- fsgdfgdfgdfghs
- dfggs
-
- fdgdgsgasgsg
-
- fsdgsdfgsgs
+ 
