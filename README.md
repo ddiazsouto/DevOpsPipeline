@@ -1,4 +1,3 @@
 # DevOpsPipeline
-Final QA project 
- 
-Fixit
+
+Go get some
