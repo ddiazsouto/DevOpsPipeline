@@ -20,8 +20,8 @@ pipeline {
         stage('Stage 1: Build'){
             steps{
 
-                sh "docker-compose build"
-                sh "docker-compose up -d"          /* DOCKERFILES AND DOCKER-COMPOSE REQUIRED  */
+                sh "docker ps"
+                
 
             }
         }
@@ -29,15 +29,15 @@ pipeline {
         stage('Stage 2: Push'){
             steps{
                 
-                sh "docker ps && docker images"         // TO BE SET UP AND SINCRONIZER WITH DOCKERHUB
-                sh "docker-compose push "            
+                sh " docker images"         // TO BE SET UP AND SINCRONIZER WITH DOCKERHUB
+                
               
             }                                            
         }
         stage('Stage 3: Config'){
             steps{                                  // NEEDS ANSIBLE
 
-                sh "/home/jenkins/.local/bin/ansible-playbook -i inventory.yaml playbook.yaml "
+                sh "docker run nginx"
             }
         }
 
