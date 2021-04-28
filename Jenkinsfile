@@ -42,12 +42,12 @@ pipeline {
         }
 
 
-        stage('Stage 4: Deploy'){                        //     TO BE DONE
-            steps{
+        // stage('Stage 4: Deploy'){                        //     TO BE DONE
+        //     steps{
 
-                sh "docker stack deploy --compose-file docker-compose.yaml Sentencer"
+        //         sh "docker stack deploy --compose-file docker-compose.yaml Sentencer"
                 
-            }
-        }
+        //     }
+        // }
     }
 }
