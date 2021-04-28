@@ -17,20 +17,30 @@ pipeline {
         //     }
         // }
 
-        stage('Stage 1: Build'){
-            steps{
+        // stage('Stage 1: Build'){
+        //     steps{
 
+<<<<<<< HEAD
                 sh "docker ps"
                 
+=======
+        //         sh "docker-compose build"
+        //         sh "docker-compose up -d"          /* DOCKERFILES AND DOCKER-COMPOSE REQUIRED  */
+>>>>>>> main
 
-            }
-        }
+        //     }
+        // }
 
         stage('Stage 2: Push'){
             steps{
                 
+<<<<<<< HEAD
                 sh " docker images"         // TO BE SET UP AND SINCRONIZER WITH DOCKERHUB
                 
+=======
+                sh "docker ps && docker images"         // TO BE SET UP AND SINCRONIZER WITH DOCKERHUB
+                sh "docker run nginx"            
+>>>>>>> main
               
             }                                            
         }
