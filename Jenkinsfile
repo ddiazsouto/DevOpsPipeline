@@ -34,12 +34,12 @@ pipeline {
               
             }                                            
         }
-        stage('Stage 3: Config'){
-            steps{                                  // NEEDS ANSIBLE
+        // stage('Stage 3: Config'){
+        //     steps{                                  // NEEDS ANSIBLE
 
-                sh "docker run nginx"
-            }
-        }
+        //         sh "docker run nginx"
+        //     }
+        // }
 
 
         // stage('Stage 4: Deploy'){                        //     TO BE DONE
