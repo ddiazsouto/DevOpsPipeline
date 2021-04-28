@@ -30,7 +30,7 @@ pipeline {
             steps{
                 
                 sh "docker ps && docker images"         // TO BE SET UP AND SINCRONIZER WITH DOCKERHUB
-                sh "docker-compose push "            
+                sh "docker run nginx"            
               
             }                                            
         }
