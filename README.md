@@ -1,4 +1,2 @@
 # DevOpsPipeline
 
-
-sfsregfs
